@@ -1,0 +1,1 @@
+This section includes all the files extracted/processed from the setonix. The different approaches and the methodologies involving creation of these files vary and their respective job scripts(bash scripts) and the python scripts used for processing is included in the respective directory. This folder only has the outputs that were extracted from setonix. 
