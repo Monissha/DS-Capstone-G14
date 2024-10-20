@@ -1,0 +1,27 @@
+To activate virtual environment:
+source /scratch/courses0101/username/myenv/bin/activate
+
+To write/rewrite bash script: 
+nano slurm_job.sh
+
+To run a job : 
+sbatch slurm_job.sh
+
+To check jobs in the queue:
+squeue -u username
+
+To cancel unnecessary job:
+scancel <job_id>
+
+To copy files to local system:
+scp username@setonix.pawsey.org.au:/scratch/courses0101/username/output.md /path/to/local/directory
+
+To copy the whole directory from setonix to local system: 
+scp -r username@setonix.pawsey.org.au:/scratch/courses0101/username/output.md /path/to/local/directory
+
+To read error logs and output logs: 
+cat pix2text_error_<job_id>.log
+cat pix2text_output_<job_id>.log
+
+To check the time the job took:
+sacct -j <jobID> --format=JobID,Elapsed,State,Start,End
