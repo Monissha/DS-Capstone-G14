@@ -1,1 +1,0 @@
-This directory has all the files included in the docker image that is created for both base model and fine-tunes Lora Model, includes dockerfile, requirements.txt and app.py(the python script with model loading, RAG class, and UI integration). The original docker file has vector file included in it, but due to its huge size, I am not including it in here. 
