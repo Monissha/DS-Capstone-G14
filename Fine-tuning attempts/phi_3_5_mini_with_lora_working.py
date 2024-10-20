@@ -126,13 +126,13 @@ def prepare_datasets(data_path, tokenizer, max_length=2048):
 """Load base model"""
 
 # Set the token as an environment variable
-os.environ["HUGGINGFACE_TOKEN"] = "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"
+os.environ["HUGGINGFACE_TOKEN"] = "hf_token"
 
 # Login to Hugging Face
 #notebook_login()
 
 # Set HF_HOME
-os.environ['HF_HOME'] = '/scratch/courses0101/mdhandapani/huggingface_cache'
+os.environ['HF_HOME'] = '/scratch/courses0101/username/huggingface_cache'
 
 
 model_name = "microsoft/Phi-3.5-mini-instruct"
