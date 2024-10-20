@@ -1,0 +1,1 @@
+This directory contains python files and job scripts used to attempt fine-tuning the LLM model using setonix. It is just an attempt, met with a lot of failures. But seems promising if these minor issues are solved. 
