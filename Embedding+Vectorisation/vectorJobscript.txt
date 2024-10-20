@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name=pix2text_chroma      # Job name
+#SBATCH --account=courses0101           # Your project account ID
+#SBATCH --partition=gpu                 # Use the GPU partition
+#SBATCH --nodes=1                       # Number of nodes
+#SBATCH --gres=gpu:8                    # Request 1 A100 GPU
+#SBATCH --time=20:00:00                 # Maximum run time
+#SBATCH --output=pix2text_%j.out        # Standard output log
+#SBATCH --error=pix2text_%j.err         # Error log
+
+# Load required modules
+module load gcc/12.2.0
+module load python/3.9.12
+module load cpe-cuda/23.03
+
+
+# Activate your virtual environment
+source /scratch/courses0101/mdhandapani/myenv/bin/activate
+
+# Run your Python script
+python /scratch/courses0101/mdhandapani/pix2text1.py
